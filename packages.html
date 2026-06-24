@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specials & Packages | Emerald Spa San Francisco</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        .packages-page { padding: 80px 50px; max-width: 1000px; margin: 0 auto; }
+        .packages-header { text-align: center; margin-bottom: 60px; }
+        .packages-header h1 { font-size: 3.5rem; margin-bottom: 15px; }
+        .packages-header p { font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto; }
+        .package-list { display: flex; flex-direction: column; gap: 40px; }
+        .package-card { background: #fff; padding: 40px; border-left: 4px solid var(--ocean-soft); border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.04); display: flex; justify-content: space-between; align-items: center; }
+        .package-info { max-width: 70%; }
+        .package-info h2 { font-size: 2rem; margin-bottom: 10px; color: var(--ocean-dark); }
+        .package-meta { display: flex; gap: 20px; margin-bottom: 20px; font-weight: 600; color: var(--sand-accent); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .package-info p { color: #555; font-size: 1.05rem; line-height: 1.7; margin-bottom: 15px; }
+        .package-includes { list-style: none; margin-top: 15px; }
+        .package-includes li { position: relative; padding-left: 20px; margin-bottom: 8px; color: var(--ocean-dark); font-size: 0.95rem; }
+        .package-includes li::before { content: "•"; position: absolute; left: 0; color: var(--ocean-soft); font-weight: bold; }
+        .package-action { text-align: center; min-width: 200px; }
+        .package-price { font-size: 2.5rem; color: var(--ocean-dark); font-family: var(--font-heading); margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Emerald Spa</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Treatments</a></li>
+                <li><a href="packages.html">Specials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Book Now</a>
+    </header>
+
+    <main class="packages-page">
+        <div class="packages-header">
+            <h1>Wellness Journeys</h1>
+            <p>Curated combinations of our most restorative therapies, designed to provide comprehensive care and deep relaxation.</p>
+        </div>
+
+        <div class="package-list">
+            <div class="package-card">
+                <div class="package-info">
+                    <h2>The Emerald Reset</h2>
+                    <div class="package-meta">
+                        <span>120 Minutes</span>
+                    </div>
+                    <p>Our signature retreat. This comprehensive experience is designed to address both mental stress and dermal vitality, leaving you completely renewed.</p>
+                    <ul class="package-includes">
+                        <li>60-Minute Aromatherapy Immersion</li>
+                        <li>60-Minute Emerald Calming Facial</li>
+                    </ul>
+                </div>
+                <div class="package-action">
+                    <div class="package-price">$340</div>
+                    <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Reserve</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-info">
+                    <h2>Urban Detox Journey</h2>
+                    <div class="package-meta">
+                        <span>120 Minutes</span>
+                    </div>
+                    <p>An ideal reset for city dwellers. This purifying sequence clears environmental stressors from the skin and stimulates natural restorative processes.</p>
+                    <ul class="package-includes">
+                        <li>60-Minute Purifying Clarification Session</li>
+                        <li>60-Minute Himalayan Exfoliating Scrub</li>
+                    </ul>
+                </div>
+                <div class="package-action">
+                    <div class="package-price">$415</div>
+                    <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Reserve</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 60px; max-width: 1000px; margin: 0 auto; text-align: left;">
+            <div>
+                <h4>Emerald Spa</h4>
+                <p>441 Stockton Street, Suite A<br>San Francisco, CA 94108</p>
+                <p>Phone: (415) 757-0508</p>
+            </div>
+            <div>
+                <h4>Hours</h4>
+                <p>Monday - Sunday<br>10:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Emerald Spa. All rights reserved. | Health Spa License Compliant.</p>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

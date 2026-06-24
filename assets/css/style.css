@@ -1,0 +1,159 @@
+/* Core Variables & Resets - Soft Ocean & Matte Sand Palette */
+:root {
+    --ocean-dark: #3a5a5a;
+    --ocean-soft: #7da09f;
+    --sand-accent: #d4cbb8;
+    --bg-light: #f7f8f7;
+    --text-dark: #4a4a4a;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: var(--font-heading);
+    color: var(--ocean-dark);
+    font-weight: 400;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ocean-dark);
+}
+
+.nav-links { list-style: none; display: flex; gap: 35px; }
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover { color: var(--ocean-soft); }
+
+/* Buttons & Pills */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--ocean-dark);
+    color: #ffffff;
+    padding: 14px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover { background-color: var(--ocean-soft); transform: translateY(-2px); }
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: #ffffff;
+    color: var(--ocean-dark);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+.pill:hover { border-color: var(--ocean-soft); transform: translateY(-2px); color: var(--ocean-dark); }
+
+/* Accordions */
+.accordion {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+.accordion:hover { border-color: var(--ocean-soft); }
+.accordion-header {
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ocean-dark);
+    user-select: none;
+}
+.accordion-content {
+    padding: 0 25px 25px;
+    display: none;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+.accordion.active .accordion-content { display: block; }
+.accordion-icon { transition: transform 0.3s ease; }
+.accordion.active .accordion-icon { transform: rotate(180deg); }
+
+/* Booking Card */
+.booking-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    border: 1px solid #eaeaea;
+    text-align: center;
+}
+.booking-card h3 { font-size: 2rem; margin-bottom: 15px; }
+.booking-card p { color: #666; margin-bottom: 30px; font-size: 1.05rem; }
+.booking-card .meta { font-size: 0.85rem; color: #888; margin-top: 20px; }
+
+/* Grid Utilities */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+@media(max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* Footer */
+footer {
+    background-color: var(--ocean-dark);
+    color: #ffffff;
+    padding: 80px 50px 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+footer h4 { color: var(--sand-accent); margin-bottom: 20px; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; }
+footer p { font-weight: 300; margin-bottom: 10px; }
+.footer-bottom {
+    margin-top: 50px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
