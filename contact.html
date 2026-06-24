@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & FAQ | Emerald Spa</title>
+    <title>Contact &amp; FAQ | Emerald Spa</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -22,72 +22,65 @@
         <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Book Now</a>
     </header>
 
-    <main style="padding: 80px 20px; max-width: 1000px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 60px;">
+    <main>
+        <div class="get-in-touch-header">
             <h1>Get in Touch</h1>
-            <p>Let’s create your perfect experience.</p>
+            <p>Let’s create your perfect wellness experience together.</p>
         </div>
 
-        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
-            <div style="text-align: center; background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; flex: 1; min-width: 300px;">
-                <h3>Address</h3>
-                <p>441 Stockton Street, Suite A</p>
-                <p>San Francisco, CA 94108</p>
-                <br>
-                <h3>Phone</h3>
-                <a href="tel:4157570508" class="pill" style="margin-top: 5px;"><i class="fa-solid fa-phone"></i> (415) 757-0508</a>
+        <div class="cards-container">
+            <!-- Our Sanctuary Card -->
+            <div class="contact-card">
+                <div class="card-header">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <h3>Our Sanctuary</h3>
+                </div>
+                <div class="address-section">
+                    <div class="label">ADDRESS</div>
+                    <p>441 Stockton Street, Suite A<br>San Francisco, CA 94108</p>
+                </div>
+                <div class="phone-section">
+                    <div class="label">PHONE</div>
+                    <a href="tel:4157570508" class="pill">
+                        <i class="fa-solid fa-phone"></i> (415) 757-0508
+                    </a>
+                </div>
+                <div class="parking-section">
+                    <div class="label">PARKING &amp; ACCESS</div>
+                    <p>Street parking available. Easy access via Powell Street BART and multiple MUNI lines. Wheelchair accessible.</p>
+                </div>
             </div>
-            
-            <div style="flex: 1; min-width: 300px;">
-                <div class="accordion active">
-                    <div class="accordion-header" style="background: var(--sand-accent); color: var(--ocean-dark);">
-                        <span>Hours of Operation</span>
-                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
-                    </div>
-                    <div class="accordion-content" style="display: block;">
-                        <table style="width: 100%; text-align: left; font-size: 0.95rem;">
-                            <tr><td style="padding: 5px 0;">Monday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Tuesday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Wednesday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Thursday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Friday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Saturday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                            <tr><td style="padding: 5px 0;">Sunday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        </table>
-                    </div>
+
+            <!-- Hours Card -->
+            <div class="hours-card">
+                <div onclick="toggleAccordion(this)" class="accordion-header">
+                    <span>Hours of Operation</span>
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content">
+                    <table>
+                        <tr><td>Monday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Tuesday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Wednesday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Thursday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Friday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Saturday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Sunday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <div class="booking-card" style="margin-top: 80px;">
+        <!-- Booking Card -->
+        <div class="booking-card">
             <h3>Ready to book your experience?</h3>
             <p>Choose your preferred service and available time. We’ll confirm your appointment instantly.</p>
-            <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary" style="width: 100%; padding: 18px; font-size: 1rem; margin-top: 20px;">Book Appointment Now</a>
-        </div>
-
-        <div style="margin-top: 80px;">
-            <h2 style="text-align: center; margin-bottom: 40px;">Common Questions</h2>
-            <div class="accordion">
-                <div class="accordion-header">
-                    <span>What type of treatments do you specialize in?</span>
-                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    Emerald Spa is a dedicated health and wellness center. We specialize in holistic body practices, including advanced dermal facials, crystal energy rituals, aromatherapy, and botanical skin polishes designed to restore natural balance.
-                </div>
-            </div>
-            <div class="accordion">
-                <div class="accordion-header">
-                    <span>Do I need an appointment?</span>
-                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
-                </div>
-                <div class="accordion-content">
-                    While we occasionally have availability for walk-ins, we highly recommend booking in advance through our online reservation system to ensure we can accommodate your preferred therapy and time.
-                </div>
-            </div>
+            <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Book Appointment Now</a>
+            <div class="meta">Instant confirmation • Free rescheduling • No hidden fees</div>
         </div>
     </main>
 
+    <!-- Footer (same as index.html) -->
     <footer>
         <div style="display: flex; justify-content: center; gap: 60px; max-width: 1000px; margin: 0 auto; text-align: left;">
             <div><h4>Emerald Spa</h4><p>441 Stockton Street, Suite A<br>San Francisco, CA 94108</p><p>Phone: (415) 757-0508</p></div>
@@ -95,6 +88,32 @@
         </div>
         <div class="footer-bottom"><p>&copy; 2026 Emerald Spa. All rights reserved. | Health Spa License Compliant.</p></div>
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+            const isActive = header.parentElement.classList.toggle('active');
+            
+            if (isActive) {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        window.onload = function() {
+            const accordion = document.querySelector('.hours-card');
+            if (accordion) {
+                accordion.classList.add('active');
+                const content = accordion.querySelector('.accordion-content');
+                const icon = accordion.querySelector('.accordion-icon');
+                if (content) content.style.display = 'block';
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            }
+        };
+    </script>
 </body>
 </html>

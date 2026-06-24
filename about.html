@@ -15,9 +15,9 @@
         .about-content h2 { font-size: 2rem; margin-bottom: 20px; color: var(--ocean-dark); }
         .about-content h3 { font-size: 1.5rem; margin-top: 40px; margin-bottom: 15px; color: var(--ocean-dark); }
         .about-content p { margin-bottom: 20px; font-size: 1.05rem; color: #555; line-height: 1.8; }
-        
+       
         .hero-about {
-            height: 70vh; /* Increased vertical size */
+            height: 70vh;
             background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -53,32 +53,33 @@
         <div class="about-content">
             <h2>Our Mission</h2>
             <p>At Emerald Spa, we believe that everyone has wellness within them, and it is our passion to guide every guest to their optimal state of well-being. We know that true wellness starts from within the body, and we deliver authentic, results-oriented facial treatments and holistic body practices to detoxify, release, and nourish the mind, body, and spirit.</p>
-            
+           
             <h3>Our Approach</h3>
             <p>We pursue a holistic approach that addresses and treats the underlying sources of stress caused by the demands of urban life. Rather than quick fixes, we treat the whole you. We have dedicated specialists that can help you unleash your own personal wellness from within through advanced skincare, aromatherapy, and profound relaxation.</p>
-            
+           
             <h3>Our Staff</h3>
             <p>Our staff is expert in each of their specific service areas and understands how targeted treatments work best to contribute to your overall health, well-being, and feelings of contentment. Our certified practitioners are here to help, heal, and give you the education and understanding you need to make self-care part of your everyday regimen.</p>
-            
+           
             <h3>Our Setting</h3>
             <p>Our sanctuary offers you a beautiful, tranquil getaway. Located centrally in downtown San Francisco, this is a private place to relax, unwind, and decompress. Escaping the noise of the city the moment you walk through our doors is central to our philosophy and offering.</p>
         </div>
 
-        <div class="accordion">
-            <div class="accordion-header">
+        <!-- Privacy Policy Dropdown (same as Hours of Operation) -->
+        <div class="hours-card" style="max-width: 1000px; margin: 0 auto;">
+            <div onclick="toggleAccordion(this)" class="accordion-header">
                 <span>Privacy Policy</span>
                 <i class="fa-solid fa-chevron-down accordion-icon"></i>
             </div>
             <div class="accordion-content">
                 <p><em>Updated January 1, 2026</em></p>
-                <p>Emerald Spa values its users' privacy. This Privacy Policy will help you understand how we collect and use personal information from those who visit our website or make use of our online facilities and services, and what we will and will not do with the information we collect. Our Policy has been designed to ensure those affiliated with Emerald Spa of our commitment to exceed most privacy standards.</p>
-                
+                <p>Emerald Spa values its users' privacy. This Privacy Policy will help you understand how we collect and use personal information from those who visit our website or make use of our online facilities and services, and what we will and will not do with the information we collect.</p>
+               
                 <h4 style="margin-top: 15px; margin-bottom: 5px; color: var(--text-dark);">Information We Collect</h4>
                 <p>It is always up to you whether to disclose personally identifiable information to us. This website collects voluntarily provided information which may include your name and phone number when you use our booking software. We collect this data to better understand your needs, fulfill our legitimate interest in improving our services, and to contact you regarding your appointments.</p>
-                
+               
                 <h4 style="margin-top: 15px; margin-bottom: 5px; color: var(--text-dark);">Use & Disclosure of Information</h4>
                 <p>Emerald Spa does not now, nor will it in the future, sell, rent or lease any of its customer lists and/or names to any third parties. We may disclose your information only as necessary to provide services you have ordered, or as required by law.</p>
-
+               
                 <h4 style="margin-top: 15px; margin-bottom: 5px; color: var(--text-dark);">Security</h4>
                 <p>Emerald Spa takes precautions to protect your information. When you submit sensitive information via our booking partner (TidyCal), your information is protected both online and offline through secure, encrypted transmission protocols.</p>
             </div>
@@ -101,6 +102,33 @@
             <p>&copy; 2026 Emerald Spa. All rights reserved. | Health Spa License Compliant.</p>
         </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+            const isActive = header.parentElement.classList.toggle('active');
+           
+            if (isActive) {
+                content.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Auto-open Privacy Policy on load (same behavior as Hours)
+        window.onload = function() {
+            const accordion = document.querySelector('.hours-card');
+            if (accordion) {
+                accordion.classList.add('active');
+                const content = accordion.querySelector('.accordion-content');
+                const icon = accordion.querySelector('.accordion-icon');
+                if (content) content.style.display = 'block';
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            }
+        };
+    </script>
 </body>
 </html>
