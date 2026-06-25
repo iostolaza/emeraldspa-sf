@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact &amp; FAQ | Emerald Spa</title>
+    <title>Contact & FAQ | Emerald Spa</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -17,103 +17,68 @@
                 <li><a href="services.html">Treatments</a></li>
                 <li><a href="packages.html">Specials</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <a href="https://tidycal.com/mzpan2265" target="_blank" class="btn-primary">Book Now</a>
             </ul>
         </nav>
-        <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Book Now</a>
+        <a href="https://tidycal.com/mzpan2265" target="_blank" class="btn-primary">Book Now</a>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></div>
     </header>
 
-    <main>
-        <div class="get-in-touch-header">
-            <h1>Get in Touch</h1>
+    <main class="page-container">
+        <div class="text-center" style="margin-bottom: 60px;">
+            <h1 style="font-size: 3rem;">Get in Touch</h1>
             <p>Let’s create your perfect wellness experience together.</p>
         </div>
 
-        <div class="cards-container">
-            <!-- Our Sanctuary Card -->
-            <div class="contact-card">
-                <div class="card-header">
-                    <i class="fa-solid fa-map-marker-alt"></i>
-                    <h3>Our Sanctuary</h3>
-                </div>
-                <div class="address-section">
-                    <div class="label">ADDRESS</div>
+        <div class="grid-2">
+            <div style="background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #eaeaea; text-align: center;">
+                <i class="fa-solid fa-map-marker-alt" style="font-size: 2rem; color: var(--sand-accent); margin-bottom: 15px;"></i>
+                <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Our Sanctuary</h3>
+                
+                <div style="margin-bottom: 30px;">
+                    <div style="font-size: 0.85rem; font-weight: bold; color: var(--ocean-dark); margin-bottom: 5px;">ADDRESS</div>
                     <p>441 Stockton Street, Suite A<br>San Francisco, CA 94108</p>
                 </div>
-                <div class="phone-section">
-                    <div class="label">PHONE</div>
-                    <a href="tel:4157570508" class="pill">
-                        <i class="fa-solid fa-phone"></i> (415) 757-0508
-                    </a>
-                </div>
-                <div class="parking-section">
-                    <div class="label">PARKING &amp; ACCESS</div>
-                    <p>Street parking available. Easy access via Powell Street BART and multiple MUNI lines. Wheelchair accessible.</p>
+                
+                <div style="margin-bottom: 30px;">
+                    <div style="font-size: 0.85rem; font-weight: bold; color: var(--ocean-dark); margin-bottom: 10px;">PHONE</div>
+                    <a href="tel:4157570508" class="pill"><i class="fa-solid fa-phone"></i> (415) 757-0508</a>
                 </div>
             </div>
 
-            <!-- Hours Card -->
-            <div class="hours-card">
-                <div onclick="toggleAccordion(this)" class="accordion-header">
-                    <span>Hours of Operation</span>
+            <div class="accordion hours-card active" style="align-self: flex-start;">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span style="font-size: 1.3rem;">Hours of Operation</span>
                     <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </div>
                 <div class="accordion-content">
-                    <table>
-                        <tr><td>Monday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Tuesday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Wednesday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Thursday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Friday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Saturday:</td><td>10:00 AM – 11:00 PM</td></tr>
-                        <tr><td>Sunday:</td><td>10:00 AM – 11:00 PM</td></tr>
+                    <table style="width: 100%; text-align: left; font-size: 0.95rem;">
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Monday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Tuesday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Wednesday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Thursday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Friday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0; border-bottom: 1px solid #eee;">Saturday:</td><td style="border-bottom: 1px solid #eee;">10:00 AM – 11:00 PM</td></tr>
+                        <tr><td style="padding: 10px 0;">Sunday:</td><td>10:00 AM – 11:00 PM</td></tr>
                     </table>
                 </div>
             </div>
         </div>
 
-        <!-- Booking Card -->
         <div class="booking-card">
             <h3>Ready to book your experience?</h3>
             <p>Choose your preferred service and available time. We’ll confirm your appointment instantly.</p>
-            <a href="https://tidycal.com/emeraldspa/wellness" target="_blank" class="btn-primary">Book Appointment Now</a>
-            <div class="meta">Instant confirmation • Free rescheduling • No hidden fees</div>
+            <a href="https://tidycal.com/mzpan2265" target="_blank" class="btn-primary" style="width: 100%; padding: 18px; font-size: 1rem;">Book Appointment Now</a>
         </div>
     </main>
 
-    <!-- Footer (same as index.html) -->
     <footer>
-        <div style="display: flex; justify-content: center; gap: 60px; max-width: 1000px; margin: 0 auto; text-align: left;">
+        <div class="footer-grid">
             <div><h4>Emerald Spa</h4><p>441 Stockton Street, Suite A<br>San Francisco, CA 94108</p><p>Phone: (415) 757-0508</p></div>
-            <div><h4>Hours</h4><p>Monday - Sunday<br>10:00 AM – 11:00 PM</p></div>
+            <div><h4>Hours</h4><p>Monday - Sunday<br>10:00 AM - 11:00 PM</p></div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 Emerald Spa. All rights reserved. | Health Spa License Compliant.</p></div>
     </footer>
-
-    <script>
-        function toggleAccordion(header) {
-            const content = header.nextElementSibling;
-            const icon = header.querySelector('.accordion-icon');
-            const isActive = header.parentElement.classList.toggle('active');
-            
-            if (isActive) {
-                content.style.display = 'block';
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.style.display = 'none';
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        window.onload = function() {
-            const accordion = document.querySelector('.hours-card');
-            if (accordion) {
-                accordion.classList.add('active');
-                const content = accordion.querySelector('.accordion-content');
-                const icon = accordion.querySelector('.accordion-icon');
-                if (content) content.style.display = 'block';
-                if (icon) icon.style.transform = 'rotate(180deg)';
-            }
-        };
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
